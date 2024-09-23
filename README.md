@@ -10,6 +10,7 @@ git clone https://github.com/mailcow/mailcow-dockerized
 ## 2. Generate your configuration file and follow the steps in the script.
 
 ```
+cd /opt/mailcow-dockerized/
 ./generate_config.sh
 ```
 
