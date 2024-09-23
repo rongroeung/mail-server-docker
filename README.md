@@ -60,14 +60,14 @@ ssl_certificate_key /etc/ssl/mail/privkey.pem;  # Key file path
 ## 8. Start mailcow
 
 ```
-sudo docker-compose up -d
+docker compose up -d
 ```
 
 ## 9. Login to mailcow
 
 ### >>> When all services are started successfully, you can now login to the admin dashboard and configure your domain, mailboxes, aliases, etc.
 
-### >>> The admin dashboard can be accessed by `https://<your-mailservers-fqdn>`
+### >>> The admin dashboard can be accessed by `http://mail.crossroadscambodia.church:4442/` and `https://mail.crossroadscambodia.church:4443/`
 
 ### >>> The default username is `admin`, and the password is `moohoo`
 
