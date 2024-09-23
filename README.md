@@ -69,7 +69,7 @@ cd /opt/mailcow-dockerized/
 docker compose up -d
 ```
 
-### Notice:
+### **Notice:
 ### >>> Command to stop mailcow services
 
 ```
