@@ -14,6 +14,10 @@ git clone https://github.com/mailcow/mailcow-dockerized
 
 ## 3. Enter your mailserver FQDN (this is your mailserver hostname, not your domain name)
 
+```
+mail.crossroadscambodia.church
+```
+
 ## 4. Select your timezone
 
 ## 5. Modify `mailserver.conf`
