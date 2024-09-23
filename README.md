@@ -3,6 +3,7 @@
 ### >>> Clone mailcow into the `/opt` folder.
 
 ```
+cd /opt/
 git clone https://github.com/mailcow/mailcow-dockerized
 ```
 
@@ -61,10 +62,26 @@ ssl_certificate_key /etc/ssl/mail/privkey.pem;  # Key file path
 ```
 
 
-## 8. Start mailcow
+## 8. Start mailcow services
 
 ```
+cd /opt/mailcow-dockerized/
 docker compose up -d
+```
+
+### Notice:
+### >>> Command to stop mailcow services
+
+```
+cd /opt/mailcow-dockerized/
+docker compose down
+```
+
+### >>> Command to check mailcow services status
+
+```
+cd /opt/mailcow-dockerized/
+docker compose ps
 ```
 
 ## 9. Login to mailcow
