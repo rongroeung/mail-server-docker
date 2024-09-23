@@ -67,7 +67,9 @@ docker compose up -d
 
 ### >>> When all services are started successfully, you can now login to the admin dashboard and configure your domain, mailboxes, aliases, etc.
 
-### >>> The admin dashboard can be accessed by `http://mail.crossroadscambodia.church:4442/` and `https://mail.crossroadscambodia.church:4443/`
+### >>> HTTP admin dashboard `http://mail.crossroadscambodia.church:4442/`
+
+### >>> HTTPS admin dashboard `https://mail.crossroadscambodia.church:4443/`
 
 ### >>> The default username is `admin`, and the password is `moohoo`
 
