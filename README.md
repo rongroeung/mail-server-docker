@@ -103,8 +103,8 @@ docker compose ps
 
 ## 11. Set up your domain(s)
 
-#### >>> You need to set up your domain first at `Configuration -> Mail Setup -> Domains`.
+#### >>> You need to set up your domain first at `E-Mail -> Configuration -> Domains -> Add domain`.
 
 ## 12. Set up your mailbox(es)
 
-#### >>> If you want to configure your mailboxes, you can add them at `Configuration -> Mail Setup -> Mailboxes`.
+#### >>> If you want to configure your mailboxes, you can add them at `E-Mail -> Configuration -> Mailboxes -> Mailboxes -> Add mailbox`.
