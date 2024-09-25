@@ -1,5 +1,5 @@
 # Install Mail Server Using Mailcow With Docker
-## I. Add DNS Record for Mail Server
+## I. Configure DNS for Mail Server
 ### 1. Add DNS Record
 
 | Type       | Host             | Value                               |
@@ -13,6 +13,8 @@
 | Type    | Host     | Value                               | Priority   |
 | ------- | -------- | ----------------------------------- | ---------- |
 | MX      | @        | mail.crossroadscambodia.church      | 10         |
+
+#### >>> Reference: https://docs.mailcow.email/getstarted/prerequisite-dns/
 
 ## II. Install mailcow-dockerized in Docker
 ### 1. Clone mailcow from GitHub
@@ -139,4 +141,5 @@ systemctl restart nginx
 #### >>> HTTPS Mailbox: https://crossroadscambodia.church:4444/SOGo
 
 ## V. Reference
+#### >>> https://docs.mailcow.email/
 #### >>> https://technicalsahil.com/how-to-install-mailcow-on-ubuntu-22-04/
