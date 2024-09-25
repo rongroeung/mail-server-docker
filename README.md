@@ -1,4 +1,4 @@
-# Install A Mail Server Using Mailcow With Docker
+# Install Mail Server Using Mailcow With Docker
 ## I. Add DNS Record for Mail Server
 ### 1. Add DNS Record
 
