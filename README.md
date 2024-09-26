@@ -1,4 +1,4 @@
-# Install Mail Server In Docker
+# Install Mail Server Using Docker
 ## I. Configure DNS for Mail Server
 ### 1. Add DNS Record
 
@@ -41,10 +41,10 @@ mail.crossroadscambodia.church
 ### 5. Select Branch
 #### >>> Choose number `1` to select master branch 
 
-### 6. Modify `mailserver.conf`
+### 6. Modify `mailcow.conf`
 ```
 cd /opt/mailcow-dockerized/
-vi mailserver.conf
+vi mailcow.conf
 ```
 #### >>> And change `HTTP_PORT` and `HTTPS_PORT` to your desired port
 ```
@@ -54,7 +54,7 @@ HTTP_BIND=
 HTTPS_PORT=4444
 HTTPS_BIND=
 ```
-#### >>> If you start "mailcow" it will automatically generate and request a letsencrypt certificate for your domains. If you don't want that, but instead use your own certificate you need to modify the `mailserver.conf` and change the line to:
+#### >>> If you start "mailcow" it will automatically generate and request a letsencrypt certificate for your domains. If you don't want that, but instead use your own certificate you need to modify the `mailcow.conf` and change the line to:
 ```
 SKIP_LETS_ENCRYPT=y
 ```
@@ -142,7 +142,7 @@ Default
 ```
 1000000
 ```
-#### >>> Click `Add domain and restart SOGo`
+#### >>> Click `Add domain and restart SOGo` to finish.
 
 ### 3. Setup Mailbox
 #### >>> To add your mailboxes, you can add them at `E-Mail` -> `Configuration` -> `Mailboxes` -> `Mailboxes` -> `Add mailbox`.
@@ -171,7 +171,7 @@ Default
 ```
 100000
 ```
-#### >>> Click `Add`
+#### >>> Click `Add` to finish.
 
 ### 4. Adding DKIM, DMARC, and SPF Records in DNS Record (Optional)
 #### >>> To enhance the security and deliverability of your emails, it’s important to add DKIM, DMARC, and SPF records to your DNS configuration.
