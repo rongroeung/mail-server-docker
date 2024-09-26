@@ -169,7 +169,7 @@ Default
 ```
 ##### - `Rate limit (msgs/day)`
 ```
-100000
+10000
 ```
 #### >>> Click `Add` to finish.
 
