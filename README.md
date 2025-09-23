@@ -69,7 +69,7 @@ cp /opt/https-httpd/privkey.pem /opt/mailcow-dockerized/data/assets/ssl/crossroa
 #### >>> Modify Nginx SSL Configuration of mailcow
 ```
 cd /opt/mailcow-dockerized/data/conf/nginx/templates/
-vi listen_ssl.template
+vi sites-default.conf.j2
 ```
 
 #### >>> Add 2 lines below
