@@ -188,6 +188,41 @@ Default
 #### >>> HTTP Mailbox: http://mail.crossroadscambodia.org:3333
 #### >>> HTTPS Mailbox: https://mail.crossroadscambodia.org:4444
 
+### 6. Add SMTP Relay
+#### >>> Do this step only in case our mail server got unauthorized when send email to other mail domains especially Gmail Domain.
+#### >>> To prevent spam, Google has restricted sending email directly from Our Mail Server to Gmail Server.
+#### >>> So we need a SMTP Relay Service Provider which is a third-party service that specializes in delivering emails. They have strong sender reputations and are whitelisted by major email providers.
+#### >>> By using a relay, our server will send the email to the relay service first, and the relay service will then deliver it to Gmail.
+#### >>> We can find a free SMTP Relay Service in Google Search Engine, then register and take the access info of the SMTP Relay to configure in our Mail Admin Dashboard.
+#### >>> To add SMTP Relay in our Mail System, login to Mail Admin Dashboard https://mail.crossroadscambodia.org:4444/admin
+#### >>> Then click `System` -> `Configuration` -> `Routing`.
+#### >>> Scoll down to `Transport Maps` section, then follow `Add transport` configuration below.
+##### - `Destination`
+```
+gmail.com
+```
+##### - `Next hop`
+```
+smtp-relay.brevo.com:587
+```
+##### - `Username`
+```
+username-provided-by-smtp-relay-provider
+```
+##### - `Password`
+```
+password-provided-by-smtp-relay-provider
+```
+##### - `Destination is a regular expression to match against MX name (.*\.google\.com to route all mail targeted to a MX ending in google.com over this hop)`
+```
+Untick
+```
+##### - `Active`
+```
+Tick
+```
+#### >>> Click `Add` to finish.
+
 ## IV. Reference
 #### >>> https://docs.mailcow.email/
 #### >>> https://technicalsahil.com/how-to-install-mailcow-on-ubuntu-22-04/
