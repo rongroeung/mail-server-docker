@@ -189,11 +189,8 @@ Default
 #### >>> HTTPS Mailbox: https://mail.crossroadscambodia.org:4444
 
 ### 6. Add SMTP Relay
-#### >>> Do this step only in case our mail server got unauthorized when send email to other mail domains especially Gmail Domain.
-#### >>> To prevent spam, Google has restricted sending email directly from Our Mail Server to Gmail Server.
-#### >>> So we need a SMTP Relay Service Provider which is a third-party service that specializes in delivering emails. They have strong sender reputations and are whitelisted by major email providers.
-#### >>> By using a relay, our server will send the email to the relay service first, and the relay service will then deliver it to Gmail.
-#### >>> We can find a free SMTP Relay Service in Google Search Engine, then register and take the access info of the SMTP Relay to configure in our Mail Admin Dashboard.
+#### >>> Note: Do this step only in case our mail server got unauthorized when send email to other mail domains especially Gmail Domain.
+#### >>> To prevent spam, Google has restricted sending email directly from Our Mail Server to Gmail Server. So we need a SMTP Relay Service Provider which is a third-party service that specializes in delivering emails. They have strong sender reputations and are whitelisted by major email providers. By using a relay, our server will send the email to the relay service first, and the relay service will then deliver it to Gmail. We can find a free SMTP Relay Service in Google Search Engine, then register and take the access info of the SMTP Relay to configure in our Mail Admin Dashboard.
 #### >>> To add SMTP Relay in our Mail System, login to Mail Admin Dashboard https://mail.crossroadscambodia.org:4444/admin
 #### >>> Then click `System` -> `Configuration` -> `Routing`.
 #### >>> Scoll down to `Transport Maps` section, then follow `Add transport` configuration below.
