@@ -142,6 +142,18 @@ Default
 ```
 1000000
 ```
+##### - `Relay this domain`
+```
+Tick
+```
+##### - `Relay all recipients`
+```
+Tick
+```
+##### - `Relay non-existing mailboxes only. Existing mailboxes will be delivered locally.`
+```
+Tick
+```
 #### >>> Click `Add domain and restart SOGo` to finish.
 
 ### 3. Setup Mailbox
@@ -151,13 +163,13 @@ Default
 ```
 rongroeung
 ```
-##### - `Domain`
-```
-crossroadscambodia.org
-```
 ##### - `Full name`
 ```
 Theng Rathrongroeung
+```
+##### - `Domain`
+```
+crossroadscambodia.org
 ```
 ##### - `Template`
 ```
@@ -196,7 +208,7 @@ Default
 #### >>> Scoll down to `Transport Maps` section, then follow `Add transport` configuration below.
 ##### - `Destination`
 ```
-gmail.com
+*
 ```
 ##### - `Next hop`
 ```
